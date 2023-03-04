@@ -26,9 +26,11 @@ const i = {
     i1: 10,
     i2: 'abc'
 }
-objectAcopy[i];
+//Присваиваю значение i свойству z объекта objectAcopy
+objectAcopy.z[i];
 //Удаления свойства
 delete objectA.y;
+delete objectAcopy.z[i];
 console.log(objectAcopy.z +" "+ typeof objectAcopy.z);
 console.log(objectA);
 //Можно менять значение объектов и их типы но нельзя вызывать их предыдущие значения 
