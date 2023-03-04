@@ -9,4 +9,13 @@ const b = 20;
 //assigment to const variable
 //b = 10;
 console.log(b);
- 
+
+const objectA = {
+    x: 10,
+    y: 'abc'
+};
+const objectAcopy = objectA;
+objectAcopy.x = 20;
+objectAcopy.y = 'cba';
+objectAcopy.z = true; 
+console.log(objectAcopy.z +" "+ typeof objectAcopy.z);
