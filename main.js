@@ -22,12 +22,17 @@ objectAcopy.x = 20;
 objectAcopy.y = 'cba';
 //Добавление новых свойств
 objectAcopy.z = true; 
+const m = 33;
+const m2 = 32;
 const i = {
     i1: 10,
-    i2: 'abc'
+    i2: 'abc',
+    i3: m,  //можно присваивать переменные своству объекта
+    m2 //можно сокрашать свойства объектов
 }
 //Присваиваю значение i свойству z объекта objectAcopy
 objectAcopy.z[i];
+
 //Удаления свойства
 delete objectA.y;
 delete objectAcopy.z[i];
@@ -41,3 +46,19 @@ console.log(f() + " " + typeof f)
 f = 10;
 console.log(f + " " + typeof f);
 //CONST - решает проблему
+
+console.clear();
+ const post = {
+    title: "my post",
+    likesQty: 5
+ };
+ console.log(post);
+ console.log(typeof post);
+ //конвертация в JSON
+ postJSON = JSON.stringify(post);
+ console.log(postJSON);
+ console.log(typeof postJSON);
+ // конвертация обратно в Object
+ postStringified = JSON.parse(postJSON);
+ console.log(postStringified);
+ console.log(typeof postStringified);
